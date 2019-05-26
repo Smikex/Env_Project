@@ -24,6 +24,29 @@ $(document).ready(function () {
   var ps = new PerfectScrollbar(sideNavScrollbar);
 
 
+
+  // Add reference ВРЕМЕННО
+  var k=1;
+  $('.open_ref').click(function(e){
+    e.preventDefault();
+  $('#ref'+k).removeClass('d-none');
+  k++;
+ 
+  });
+  
+  $('[data-id=1]').click(function(e){
+    e.preventDefault();
+  $('#ref3').removeClass('d-none');
+  });
+
+  // remove Reference
+
+  $('.trash-button.remove').click(function(e){
+    e.preventDefault();
+$(this).parent().parent().addClass('d-none');
+  });
+
+
   // Select2 
 
   function format(item, state) {
@@ -1131,6 +1154,23 @@ if ($(this).prop("checked")){
             })
         })
     });
+
+    // Price slider
+
+    $( function() {
+      $( "#price-slider" ).slider({
+        range: true,
+        min: 0,
+        max: 500,
+        values: [ 10, 300 ],
+        slide: function( event, ui ) {
+          $( "#price_from" ).val( "$MX" + ui.values[ 0 ] );
+          $( "#price_to" ).val( "$MX" + ui.values[ 1 ] );
+        }
+      });
+    
+       
+    } );
 
 
 });

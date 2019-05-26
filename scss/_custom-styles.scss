@@ -664,6 +664,13 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans:400,600,700";
 
 // custom MDB
+.main-color{
+    color: #006EAD!important;
+    border-color: #006EAD!important;
+}
+body .btn{
+    border-radius: 4px;  
+}
 .collapsing{
     width: 100%;
 }
@@ -2092,9 +2099,6 @@ img.g-map{
 .radiodocument .select-wrapper{
     min-width: 105px;
 }
-.radiodocument .select-wrapper +label{
-    top: 1.7rem;
-}
   
   .module_more p.collapse[aria-expanded="false"] {
       display: block;
@@ -2409,9 +2413,9 @@ max-width: 90px
 .package-block-ref a.collapsed[aria-expanded="false"]:before, .add-ref.collapsed[aria-expanded="false"]:before{
     content:"+"
 }
-.package-block-ref a[aria-expanded="true"]:before, .add-ref[aria-expanded="true"]:before{
-    content:"-"
-}
+// .package-block-ref a[aria-expanded="true"]:before, .add-ref[aria-expanded="true"]:before{
+//     content:"-"
+// }
 .button-add-package{
     margin: 10PX 0;
     font-weight: bold;
@@ -2647,6 +2651,13 @@ box-shadow: 0px 0px 2px 4px rgba(0,0,0,.1);
 .options-invoice-2 .md-form{
     width: 100%;
 }
+.open_ref{
+    color: #006EAD;
+    font-size: 14px;
+    font-weight: 600;
+    border:none;
+    background: transparent;
+}
 @media(min-width:768px){
     .options-invoice-2 .md-form{
     width: 48%;
@@ -2661,4 +2672,106 @@ box-shadow: 0px 0px 2px 4px rgba(0,0,0,.1);
     border-radius: .25rem;
 }
 
+}
+
+// Get Shipments Rate
+.filters-block{
+    margin-bottom: 1.5rem;
+}
+.rate-block.rate-block_first{
+    background-color: #EBF3F6;   
+}
+.rate-block.rate-block_first div{
+    font-size: 0.8125rem;
+    color: #4A4A4A;
+}
+.rate-block{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    background-color: #F6FCFF;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #4A4A4A;
+    min-height: 48px;
+    align-items: center;
+    cursor: pointer;
+}
+.rate-block:last-child{
+    margin-bottom: 3rem;
+}
+.rate-block .material-tooltip-main{
+    color: #828895;
+    align-self: center;
+}
+.rate-block p{
+    color: #828895;
+    font-size: 	0.75rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.rate-block-from{
+    padding-left: 1rem;
+    color: #006EAD;
+    font-size: 0.9375rem;
+    font-weight: bold;
+    width: 35%;
+}
+.rate-block-date{
+    width: 15%;
+}
+.rate-block-details{
+    width: 25%;
+}
+.rate-block-price{
+    width: 25%;
+    color: #006EAD;
+    display: flex;
+    justify-content: space-between;
+}
+.rate-block-price p{
+    text-decoration: line-through;
+}
+.btn-rate{
+    border-radius: 4px;
+    background-color: #FF6600;
+    color: #fff;
+    margin: 0;
+}
+.shipment-modals p{
+    color: #4A4A4A;
+    font-size: 0.875rem;
+    font-weight: bold
+}
+.modal-price p + div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.modal-price .form-group{
+    margin-left: 0;
+    width: 44%;
+}
+.shipment-modals{
+    border-radius: 4px!important
+}
+.shipment-modals .modal-footer{
+    border-radius: 0 0 4px 4px;
+    background-color: #F6FCFF;
+}
+.shipment-modals button{
+border:none;
+background: transparent;
+font-weight: bold;
+color: #4A4A4A;
+font-size: 	0.75rem;
+}
+.shipment-modals button:hover{
+  color: #FF6600;
+}
+
+#price-slider{
+    width: 100%;
 }

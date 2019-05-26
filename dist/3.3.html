@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>3.3</title>
+  <!-- Select2 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Start your project here-->
+
+  <!-- Sidebar navigation -->
+
+  <div id="slide-out" class="side-nav wide fixed slim">
+    <ul class="custom-scrollbar">
+      <!-- Logo -->
+      <li>
+        <div class="logo-wrapper sn-ad-avatar-wrapper">
+          <a href="#"><img src="img/enviaya-mundo-logo.png"><span>EnviaYa!</span></a>
+
+        </div>
+      </li>
+      <!--/. Logo -->
+      <!-- Side navigation links -->
+      <li>
+        <ul class="collapsible collapsible-accordion">
+          <li><a class="collapsible-header waves-effect arrow-r active"><i
+                class="fa-custome icn-menu_dashboard_default"></i>
+              Dashboard</a>
+          </li>
+          <li><a class="collapsible-header waves-effect arrow-r"><i class="fa-custome icn-menu_shipments_default"></i>
+              Shipments<i class="fas fa-angle-down rotate-icon"></i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#" class="waves-effect">
+                    <span class="sv-slim"> MS</span>
+                    <span class="sv-normal">My Shipments</span></a>
+                </li>
+                <li><a href="#" class="waves-effect">
+                    <span class="sv-slim"> GS </span>
+                    <span class="sv-normal">Get Shipment Rate</span></a>
+                </li>
+                <li><a href="#" class="waves-effect">
+                    <span class="sv-slim"> QS </span>
+                    <span class="sv-normal">Quote Shipment</span></a>
+                </li>
+                <li><a href="#" class="waves-effect">
+                    <span class="sv-slim"> SP </span>
+                    <span class="sv-normal">Schedule Pickup</span></a>
+                </li>
+                <li><a href="#" class="waves-effect">
+                    <span class="sv-slim"> PI </span>
+                    <span class="sv-normal">Pickups</span></a>
+                </li>
+                <li><a href="#" class="waves-effect">
+                    <span class="sv-slim"> AB </span>
+                    <span class="sv-normal">Address book</span></a>
+                </li>
+                <li><a href="#" class="waves-effect">
+                    <span class="sv-slim"> PA </span>
+                    <span class="sv-normal">Packagings</span></a>
+                </li>
+                <li><a href="#" class="waves-effect">
+                    <span class="sv-slim"> ST </span>
+                    <span class="sv-normal">Shipment Template</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a class="collapsible-header waves-effect arrow-r"><i class="fa-custome icn-menu_billing_default"></i>
+              Billing</a>
+          </li>
+          <li><a class="collapsible-header waves-effect arrow-r"><i
+                class="fa-custome icn-menu_administration_default"></i>
+              Administration</a>
+          </li>
+          <li><a class="collapsible-header waves-effect arrow-r"><i class="fa-custome icn-menu_system_default"></i>
+              Sistem</a>
+          </li>
+          <li><a class="collapsible-header waves-effect arrow-r"><i class="fa-custome icn-menu_shop_default"></i>
+              Shops</a>
+          </li>
+          <li><a class="collapsible-header waves-effect arrow-r"><i class="fa-custome icn-menu_support_default"></i>
+              Support</a>
+          </li>
+          <li><a class="collapsible-header waves-effect arrow-r"><i class="fa-custome icn-menu_dashboard_default"></i>
+              Faq</a>
+          </li>
+          <li><a id="toggle" class="waves-effect"><i class="sv-slim-icon fas fa-angle-double-right "></i>Minimize
+              menu</a>
+          </li>
+        </ul>
+      </li>
+      <!--/. Side navigation links -->
+    </ul>
+    <div class="sidenav-bg"></div>
+  </div>
+  <!--/. Sidebar navigation -->
+
+  <!--Main layout-->
+  <div class="wrapper">
+    <div class="content container">
+      <!-- Head  -->
+      <section class="header">
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="#" data-activates="slide-out" class="btn btn-primary p-3 button-collapse d-block d-xl-none"><i
+              class="fas fa-bars"></i></a>
+          <div class=" name_shipments">
+            Get Shipment Rate
+          </div>
+          <div class="step-1-of-5-enter-s d-md-block d-none">
+            Step 3 of 5: Enter Shipment Details
+          </div>
+          <div class=" d-flex">
+            <div class="switch">
+              <label>
+                <span class="d-none   d-md-inline">Live mode</span>
+                <input type="checkbox">
+                <span class="lever"></span>
+              </label>
+            </div>
+            <div class="notifications">
+              <a href="#">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                <span class="z-depth-1-half">18</span>
+              </a>
+            </div>
+            <div class="dropdown ">
+              <div class="user d-flex align-items-center" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+
+                <i class="fa fa-user" aria-hidden="true"></i>
+
+                <div class="user_name" data-toggle="collapse">
+                  <span class="d-none   d-md-inline">Ernest Green</span>
+
+
+                  <i class="fa fa-sort-down rotate-icon-new " aria-hidden="true"></i>
+
+
+                </div>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="#">
+                    <i class="fa fas fa-paper-plane" aria-hidden="true"></i>
+                    Mis envios
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="fa fas fa-sliders-h" aria-hidden="true"></i>
+                    Configuración
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="fa fas fa-key" aria-hidden="true"></i>
+                    Cambiar contraseña
+                  </a>
+
+                  <a class="dropdown-item" href="#">
+                    <i class="fa fas fa-user" aria-hidden="true"></i>
+                    Direcciones de facturación
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item sign-out" href="#">
+                    <i class="fa fas fa-sign-out-alt" aria-hidden="true"></i>
+                    Salir
+                  </a>
+                  <a class="dropdown-item sign-in" href="#">
+                    <i class="fa fas fa-sign-in-alt" aria-hidden="true"></i>
+                    Entrada
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <section class="wrapper-content">
+        <div class="row">
+       <!-- Main block    -->
+
+<div class="col-md-8">
+  <!-- Filters+modals -->
+<div class="filters-block">
+  <button type="button"  data-toggle="modal" data-target="#price" class="btn btn-outline-primary main-color waves-effect font-weight-bold">PRICE</button>
+  <button type="button" class="btn btn-outline-primary main-color waves-effect font-weight-bold">DELIVERY DAY</button>
+  <button type="button" class="btn btn-outline-primary main-color waves-effect font-weight-bold">CARRIERS</button>
+
+  <!-- Modal -->
+<div class="modal fade" id="price" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-sm" role="document">
+  <div class="modal-content shipment-modals">
+      <form>
+    <div class="modal-body modal-price">
+     <p>Price range</p>
+        <div>
+            <!-- Material input -->
+            <div class="md-form form-group ">
+              <input type="text" class="form-control" id="price_from" placeholder="$MX56">
+              <label for="price_from">From</label>
+            </div>
+            <!-- Material input -->
+            <div class="md-form form-group">
+              <input type="text" class="form-control" id="price_to" placeholder="$MX1275">
+              <label for="price_to">To</label>
+            </div>
+            <div id="price-slider"></div>
+          </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="" data-dismiss="modal">CLEAR</button>
+      <button type="button" class="">APPLY</button>
+    </div>
+  </form>
+  </div>
+</div>
+</div>
+</div>
+<!-- Main content block -->
+
+<div class="rate-block-wrap">
+  <div class="rate-block rate-block_first">
+    <div class="rate-block-from">From</div>
+    <div class="rate-block-date">Est. delivery</div>
+    <div class="rate-block-details">Details</div>
+    <div class="rate-block-price">Price</div>
+  </div>
+
+  <div class="rate-block">
+    <div class="rate-block-from"> <img src="" alt=""> EXPRESS SAVER</div>
+    <div class="rate-block-date">12/18/2018 <p>11 days</p></div>
+    <div class="rate-block-details">FedEx does not offer pick… <p>Enhanced Online Tracking</p></div>
+    <div class="rate-block-price">
+      <div>
+      MX$251.77 
+      <p>MX$314.89</p>
+    </div>
+    <a href="#" data-placement="top" class="material-tooltip-main" data-toggle="tooltip"
+  title="Default tooltip"><i class="fas fa-question-circle new-dir-block-content-item-after"></i></a>
+
+      <button type="button" class="btn btn-rate px-3"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+    </div>
+  </div>
+
+  <div class="rate-block">
+      <div class="rate-block-from"><img src="" alt=""> 3 DAY DELIVERY</div>
+      <div class="rate-block-date">12/10/2018 <p>3 days</p></div>
+      <div class="rate-block-details">Free pickup <p>Enhanced Online Tracking</p></div>
+      <div class="rate-block-price">
+        <div>
+            MX$314.58  
+            <p></p>
+        </div>
+        <a href="#" data-placement="top" class="material-tooltip-main" data-toggle="tooltip"
+        title="Default tooltip"><i class="fas fa-question-circle new-dir-block-content-item-after"></i></a>
+        <button type="button" class="btn btn-rate px-3"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+</div>
+
+</div>
+          <!-- Edit Adress -->
+          <div class="col-md-4">
+            <div class="card-address">
+
+              <div class="card-address-block" id="origin">
+                <div class="card-body-headline d-flex justify-content-between"><span>Origin</span>
+                  <span class="rectangle-15">
+                    <i class="fas fa-pencil-alt  atoms-icon-shipments-user-chat"></i>
+                  </span>
+                </div>
+                <div class="wr_line_address_book d-flex">
+                  <div class="static">Contact</div>
+                  <div class="render_value">
+                    Ian Mitchell
+                  </div>
+                </div>
+                <div class="wr_line_address_book d-flex">
+                  <div class="static">Ship from</div>
+                  <div class="render_value">
+                    <span class="flag">
+                      <img src="img/custom/flag.png" alt=" ">
+                    </span>
+                    95930 Mecayapan, VE
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-address-block" id="destination">
+                <div class="card-body-headline d-flex justify-content-between"><span>Destination</span>
+                  <span class="rectangle-15">
+                    <i class="fas fa-pencil-alt  atoms-icon-shipments-user-chat"></i>
+                  </span>
+                </div>
+                <div class="wr_line_address_book d-flex">
+                  <div class="static">Contact</div>
+                  <div class="render_value">
+                    Ian Mitchell
+                  </div>
+                </div>
+                <div class="wr_line_address_book d-flex">
+                  <div class="static">Ship to</div>
+                  <div class="render_value">
+                    <span class="flag">
+                      <img src="img/custom/flag.png" alt=" ">
+                    </span>
+                    95930 Mecayapan, VE
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col-12">
+            <button type="button" class="btn btn-continue">Quote</button>
+          </div>
+        </div> -->
+      </section>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="row">
+        <div class=" col-md-4 col-lg-4 col-xl-4">
+          <div class="foo-wrapper">
+            <h3>País</h3>
+            <p>
+              <select class="mdb-select md-form colorful-select dropdown-primary" searchable="Search here..">
+                <option value="" disabled selected>Choose your country</option>
+                <option value="1">USA</option>
+                <option value="2">Germany</option>
+                <option value="3">France</option>
+                <option value="3">Poland</option>
+                <option value="3">Japan</option>
+              </select>
+            </p>
+          </div>
+          <div class="foo-wrapper">
+            <h3>Enlaces</h3>
+            <a href="https://enviaya.com.mx/terminos_y_condiciones">Términos y condiciones</a>
+            <a href="https://enviaya.com.mx/aviso_de_privacidad">Aviso de Privacidad</a>
+            <a href="https://enviaya.com.mx/contacto">Contacto</a>
+          </div>
+          <div class="foo-wrapper">
+            <h3>Métodos de Pago</h3>
+            <img src="img/custom/pay.png" alt="">
+          </div>
+        </div>
+        <div class=" col-md-4 col-lg-4 col-xl-4">
+          <div class="foo-wrapper">
+            <h3>Sobre nosotros</h3>
+            <p>Somos una empresa que nace global con base en Chile y México. Tenemos más de 10 años de experiencia en
+              la industria de transporte y logística hemos estado involucrado en el desarrollo de productos de e
+              commerce en uno de los lideres de la logistica del mundo.</p>
+            <p>Nuestra misión es fortalecer y facilitar el comercio electrónico de nuestros clientes, ofreciendo
+              herramientas seguras, confiables y fáciles de usar para integrar sus servicios de logística.</p>
+          </div>
+        </div>
+        <div class=" col-md-4 col-lg-4 col-xl-4">
+          <div class="foo-wrapper">
+            <h3>Contáctanos!</h3>
+            <p>
+              Kepler 195 <br />
+              Col. Nueva Anzures<br />
+              11590 México DF<br />
+              México </p>
+          </div>
+          <div class="foo-wrapper">
+            <i class="fa-custome icn-input_email"></i><a href="https://enviaya.com.mx/contacto">Enviar un mensaje</a>
+          </div>
+          <div class="foo-wrapper">
+            <p> Horarios de Servicio: <br />
+              <i class="fa-custome icn-shipmennts_user_schedule"></i> 09:00 - 19:00</p>
+            <p class="foo-intel">(Horario UTC -6:00 Mexico City)</p>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+    <!--Footer-->
+  </div>
+  <!-- /Start your project here-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

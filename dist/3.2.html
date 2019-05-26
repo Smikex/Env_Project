@@ -127,7 +127,7 @@
             Get Shipment Rate
           </div>
           <div class="step-1-of-5-enter-s d-md-block d-none">
-            Step 1 of 5: Enter Shipment Details
+            Step 2 of 5: Enter Shipment Details
           </div>
           <div class=" d-flex">
             <div class="switch">
@@ -333,36 +333,66 @@
                         </div>
                         <div class="package-block-content-right">
                           <div class="md-form form-group">
-                            <input type="number" class="form-control" id="inputV" step="any" value="1.6" disabled>
-                            <label for="inputV">Vol. Weight, kg</label>
+                            <input type="number" class="form-control" id="inputV1" step="any" value="1.6" disabled>
+                            <label for="inputV1">Vol. Weight, kg</label>
                           </div>
                         </div>
                       </div>
                       <div class="package-block-ref ">
                         <!-- Collapsible element -->
-                        <div class="collapse" id="ref1">
+                        <div class="d-none" id="ref1">
                           <p>List of references</p>
                           <div class="package-block-ref-inputs d-flex sel">
                             <div class="position-relative package-block-ref-inputs-left">
                               <select class="mdb-select md-form colorful-select dropdown-primary">
+                                <option value="" disabled selected>Type of reference</option>
                                 <option value="1">Cost Center</option>
                                 <option value="2">Lb</option>
                               </select>
-                              <label class="mdb-main-label">Type of reference</label>
+                            </div>
+                            <div class="md-form form-group">
+                              <input type="text" class="form-control" id="inputV2">
+                              <label for="inputV2">Reference</label>
+                            </div>
+                            <button class="trash-button remove"><i class="fas fa-trash-alt"></i></button> <button data-id="1" class="trash-button"><i class="fas fa-plus main-color"></i></button>
+                          </div>
+                        </div>
+                        
+                        <div class="d-none" id="ref2">
+                          <div class="package-block-ref-inputs d-flex sel">
+                            <div class="position-relative package-block-ref-inputs-left">
+                              <select class="mdb-select md-form colorful-select dropdown-primary">
+                                <option value="" disabled selected>Type of reference</option>
+                                <option value="1">Cost Center</option>
+                                <option value="2">Lb</option>
+                              </select>
+                            </div>
+                            <div class="md-form form-group">
+                              <input type="text" class="form-control" id="inputV3">
+                              <label for="inputV3">Reference</label>
+                            </div>
+                            <button class="trash-button remove"><i class="fas fa-trash-alt"></i></button> <button data-id="1" class="trash-button"><i class="fas fa-plus main-color"></i></button>
+                          </div>
+                        </div>
+                        <div class="d-none" id="ref3">
+                          <div class="package-block-ref-inputs d-flex sel">
+                            <div class="position-relative package-block-ref-inputs-left">
+                              <select class="mdb-select md-form colorful-select dropdown-primary">
+                                <option value="" disabled selected>Type of reference</option>
+                                <option value="1">Cost Center</option>
+                                <option value="2">Lb</option>
+                              </select>
                             </div>
                             <div class="md-form form-group">
                               <input type="text" class="form-control" id="inputV">
                               <label for="inputV">Reference</label>
                             </div>
-                            <button class="trash-button"><i class="fas fa-trash-alt"></i></button>
+                            <button class="trash-button remove"><i class="fas fa-trash-alt"></i></button> <button data-id="1" class="trash-button"><i class="fas fa-plus main-color"></i></button>
                           </div>
                         </div>
-                        <!-- / Collapsible element -->
+                        <!-- / Add reference -->
 
-                        <!-- / Collapse buttons -->
-                        <a class="" data-toggle="collapse" href="#ref1" aria-expanded="false" aria-controls="ref1">
-                          Add parcel reference
-                        </a>
+                        <button class="open_ref">+ Add parcel reference</button>
 
                       </div>
 
@@ -397,8 +427,8 @@
                           <label class="mdb-main-label">Type of reference</label>
                         </div>
                         <div class="md-form form-group">
-                          <input type="text" class="form-control" id="inputV">
-                          <label for="inputV">Reference</label>
+                          <input type="text" class="form-control" id="inputVX">
+                          <label for="inputVX">Reference</label>
                         </div>
                         <button class="trash-button"><i class="fas fa-trash-alt"></i></button>
                       </div>
