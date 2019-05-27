@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>4.1</title>
+    <!-- Select2 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Start your project here-->
+
+    <!-- Sidebar navigation -->
+
+    <div id="slide-out" class="side-nav wide fixed slim">
+        <ul class="custom-scrollbar">
+            <!-- Logo -->
+            <li>
+                <div class="logo-wrapper sn-ad-avatar-wrapper">
+                    <a href="#"><img src="img/enviaya-mundo-logo.png"><span>EnviaYa!</span></a>
+
+                </div>
+            </li>
+            <!--/. Logo -->
+            <!-- Side navigation links -->
+            <li>
+                <ul class="collapsible collapsible-accordion">
+                    <li><a class="collapsible-header waves-effect arrow-r active"><i
+                                class="fa-custome icn-menu_dashboard_default"></i>
+                            Dashboard</a>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i
+                                class="fa-custome icn-menu_shipments_default"></i>
+                            Shipments<i class="fas fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#" class="waves-effect">
+                                        <span class="sv-slim"> MS</span>
+                                        <span class="sv-normal">My Shipments</span></a>
+                                </li>
+                                <li><a href="#" class="waves-effect">
+                                        <span class="sv-slim"> GS </span>
+                                        <span class="sv-normal">Get Shipment Rate</span></a>
+                                </li>
+                                <li><a href="#" class="waves-effect">
+                                        <span class="sv-slim"> QS </span>
+                                        <span class="sv-normal">Quote Shipment</span></a>
+                                </li>
+                                <li><a href="#" class="waves-effect">
+                                        <span class="sv-slim"> SP </span>
+                                        <span class="sv-normal">Schedule Pickup</span></a>
+                                </li>
+                                <li><a href="#" class="waves-effect">
+                                        <span class="sv-slim"> PI </span>
+                                        <span class="sv-normal">Pickups</span></a>
+                                </li>
+                                <li><a href="#" class="waves-effect">
+                                        <span class="sv-slim"> AB </span>
+                                        <span class="sv-normal">Address book</span></a>
+                                </li>
+                                <li><a href="#" class="waves-effect">
+                                        <span class="sv-slim"> PA </span>
+                                        <span class="sv-normal">Packagings</span></a>
+                                </li>
+                                <li><a href="#" class="waves-effect">
+                                        <span class="sv-slim"> ST </span>
+                                        <span class="sv-normal">Shipment Template</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i
+                                class="fa-custome icn-menu_billing_default"></i>
+                            Billing</a>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i
+                                class="fa-custome icn-menu_administration_default"></i>
+                            Administration</a>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i
+                                class="fa-custome icn-menu_system_default"></i>
+                            Sistem</a>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i
+                                class="fa-custome icn-menu_shop_default"></i>
+                            Shops</a>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i
+                                class="fa-custome icn-menu_support_default"></i>
+                            Support</a>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i
+                                class="fa-custome icn-menu_dashboard_default"></i>
+                            Faq</a>
+                    </li>
+                    <li><a id="toggle" class="waves-effect"><i
+                                class="sv-slim-icon fas fa-angle-double-right "></i>Minimize
+                            menu</a>
+                    </li>
+                </ul>
+            </li>
+            <!--/. Side navigation links -->
+        </ul>
+        <div class="sidenav-bg"></div>
+    </div>
+    <!--/. Sidebar navigation -->
+
+    <!--Main layout-->
+    <div class="wrapper">
+        <div class="content container">
+            <!-- Head  -->
+            <section class="header">
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="#" data-activates="slide-out"
+                        class="btn btn-primary p-3 button-collapse d-block d-xl-none"><i class="fas fa-bars"></i></a>
+                    <div class=" name_shipments">
+                        Get Shipment Rate
+                    </div>
+                    <div class="step-1-of-5-enter-s d-md-block d-none">
+                        Step 4 of 5: Select Payment Method
+                    </div>
+                    <div class=" d-flex">
+                        <div class="switch">
+                            <label>
+                                <span class="d-none   d-md-inline">Live mode</span>
+                                <input type="checkbox">
+                                <span class="lever"></span>
+                            </label>
+                        </div>
+                        <div class="notifications">
+                            <a href="#">
+                                <i class="fa fa-bell" aria-hidden="true"></i>
+                                <span class="z-depth-1-half">18</span>
+                            </a>
+                        </div>
+                        <div class="dropdown ">
+                            <div class="user d-flex align-items-center" id="dropdownMenu4" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+
+                                <i class="fa fa-user" aria-hidden="true"></i>
+
+                                <div class="user_name" data-toggle="collapse">
+                                    <span class="d-none   d-md-inline">Ernest Green</span>
+
+
+                                    <i class="fa fa-sort-down rotate-icon-new " aria-hidden="true"></i>
+
+
+                                </div>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fas fa-paper-plane" aria-hidden="true"></i>
+                                        Mis envios
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fas fa-sliders-h" aria-hidden="true"></i>
+                                        Configuración
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fas fa-key" aria-hidden="true"></i>
+                                        Cambiar contraseña
+                                    </a>
+
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fas fa-user" aria-hidden="true"></i>
+                                        Direcciones de facturación
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item sign-out" href="#">
+                                        <i class="fa fas fa-sign-out-alt" aria-hidden="true"></i>
+                                        Salir
+                                    </a>
+                                    <a class="dropdown-item sign-in" href="#">
+                                        <i class="fa fas fa-sign-in-alt" aria-hidden="true"></i>
+                                        Entrada
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wrapper-content">
+                <div class="row">
+                    <!-- Main block    -->
+
+                    <div class="col-md-8 payment-methods">
+                        <div class="headline">
+                            <a>Select Payment Method</a>
+                        </div>
+
+                        <!--Accordion wrapper-->
+                        <div class="accordion md-accordion payment-accordion" id="accordionEx1" role="tablist"
+                            aria-multiselectable="true">
+
+                            <!-- Accordion card -->
+                            <div class="card">
+
+                                <!-- Card header -->
+                                <div class="card-header" role="tab" id="headingTwo1">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
+                                        href="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" value="pay_paypal"
+                                                id="pay_paypal" name="radioPay">
+                                            <label class="custom-control-label" for="pay_paypal">PayPal</label>
+                                        </div>
+                                        <img class="pay-ico" src="img/svg/paypal.svg" alt="">
+                                    </a>
+                                </div>
+
+                                <!-- Card body -->
+                                <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1"
+                                    data-parent="#accordionEx1">
+                                    <div class="card-body">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="paypal_checkbox">
+                                            <label class="form-check-label custom_links" for="paypal_checkbox">I read
+                                                the <a href="#">list of prohibited items</a> and accept the <a
+                                                    href="#">Terms and Conditions of EnvíaYa,</a> the <a
+                                                    href="#">Privacy Policy</a></label>
+                                        </div>
+                                        <div class="info-block">
+                                            <p class="font-weight-bold">What happens next?</p>
+                                            <p class="mb-0">After your payment we will generate your shipment label.
+                                                PayPal payments generally are processed immediately and you will be able
+                                                to print your label and send your shipment instantly on the next page.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Accordion card -->
+
+                            <!-- Accordion card -->
+                            <div class="card">
+
+                                <!-- Card header -->
+                                <div class="card-header" role="tab" id="headingTwo2">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
+                                        href="#collapseTwo21" aria-expanded="false" aria-controls="collapseTwo21">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" value="pay_credit"
+                                                id="pay_credit" name="radioPay">
+                                            <label class="custom-control-label" for="pay_credit">Credit or debit
+                                                card</label>
+                                        </div>
+                                        <img class="pay-ico" src="img/conekta-credit-cards.png" alt="">
+                                    </a>
+                                </div>
+
+                                <!-- Card body -->
+                                <div id="collapseTwo21" class="collapse" role="tabpanel" aria-labelledby="headingTwo21"
+                                    data-parent="#accordionEx1">
+                                    <div class="card-body">
+                                        <div class="card-body-inputs">
+                                            <div class="md-form w-100">
+                                                <input type="number" id="card_number" class="form-control">
+                                                <label for="card_number">Card Number</label>
+                                            </div>
+                                        </div>
+                                        <div class="card-body-inputs">
+                                            <div class="md-form">
+                                                <input type="text" id="card_name" class="form-control">
+                                                <label for="card_name">Cardholder name</label>
+                                            </div>
+                                            <div class="md-form">
+                                                <input type="number" id="card_val" class="form-control">
+                                                <label for="card_val">MM/YY</label>
+                                            </div>
+                                            <div class="md-form">
+                                                <input type="password" id="card_cvc" class="form-control">
+                                                <label for="card_cvc">CVC</label>
+                                                <a href="#" data-toggle="tooltip" title="Default tooltip"><i class="fas fa-question-circle new-dir-block-content-item-after"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="credit_checkbox">
+                                            <label class="form-check-label custom_links" for="credit_checkbox">I read
+                                                the <a href="#">list of prohibited items</a> and accept the <a
+                                                    href="#">Terms and Conditions of EnvíaYa,</a> the <a
+                                                    href="#">Privacy Policy</a></label>
+                                        </div>
+                                        <div class="info-block">
+                                            <p class="font-weight-bold">What happens next?</p>
+                                            <p class="mb-0">Tu envío tiene un costo muy alto. Para protegernos de
+                                                fraude, no se puede pagar este envío con Credit Card. Por favor elige
+                                                otro método de pago.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Accordion card -->
+
+                            <!-- Accordion card -->
+                            <div class="card">
+
+                                <!-- Card header -->
+                                <div class="card-header" role="tab" id="headingThree31">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
+                                        href="#collapseThree31" aria-expanded="false" aria-controls="collapseThree31">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" value="pay_oxxo"
+                                                id="pay_oxxo" name="radioPay">
+                                            <label class="custom-control-label" for="pay_oxxo">OXXO</label>
+                                        </div>
+                                        <img class="pay-ico" src="img/oxxo.png" alt="">
+                                    </a>
+                                </div>
+
+                                <!-- Card body -->
+                                <div id="collapseThree31" class="collapse" role="tabpanel"
+                                    aria-labelledby="headingThree31" data-parent="#accordionEx1">
+                                    <div class="card-body">
+                                        <div class="form-check mb-3">
+                                            <input type="checkbox" class="form-check-input" id="oxxo_checkbox">
+                                            <label class="form-check-label custom_links" for="oxxo_checkbox">I read the
+                                                <a href="#">list of prohibited items</a> and accept the <a
+                                                    href="#">Terms and Conditions of EnvíaYa,</a> the <a
+                                                    href="#">Privacy Policy</a></label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Accordion card -->
+
+                            <!-- Accordion card -->
+                            <div class="card">
+
+                                <!-- Card header -->
+                                <div class="card-header" role="tab" id="headingThree41">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
+                                        href="#collapseThree41" aria-expanded="false" aria-controls="collapseThree41">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" value="pay_spei"
+                                                id="pay_spei" name="radioPay">
+                                            <label class="custom-control-label" for="pay_spei">SPEI</label>
+                                        </div>
+                                        <img class="pay-ico" src="img/spei.png" alt="">
+                                    </a>
+                                </div>
+
+                                <!-- Card body -->
+                                <div id="collapseThree41" class="collapse" role="tabpanel"
+                                    aria-labelledby="headingThree41" data-parent="#accordionEx1">
+                                    <div class="card-body">
+                                        <div class="form-check mb-3">
+                                            <input type="checkbox" class="form-check-input" id="spei_checkbox">
+                                            <label class="form-check-label custom_links" for="spei_checkbox">I read the
+                                                <a href="#">list of prohibited items</a> and accept the <a
+                                                    href="#">Terms and Conditions of EnvíaYa,</a> the <a
+                                                    href="#">Privacy Policy</a></label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Accordion card -->
+                            <div class="card">
+
+                                <!-- Card header -->
+                                <div class="card-header" role="tab" id="headingThree51">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
+                                        href="#collapseThree51" aria-expanded="false" aria-controls="collapseThree51">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" value="pay_pre"
+                                                id="pay_pre" name="radioPay">
+                                            <label class="custom-control-label" for="pay_pre">Prepay</label>
+                                        </div>
+                                        <img class="pay-ico" src="img/svg/primary_logo.svg" alt="">
+                                    </a>
+                                </div>
+
+                                <!-- Card body -->
+                                <div id="collapseThree51" class="collapse" role="tabpanel"
+                                    aria-labelledby="headingThree51" data-parent="#accordionEx1">
+                                    <div class="card-body">
+                                        <div class="form-check mb-3">
+                                            <input type="checkbox" class="form-check-input" id="prepay_checkbox">
+                                            <label class="form-check-label custom_links" for="prepay_checkbox">I read
+                                                the <a href="#">list of prohibited items</a> and accept the <a
+                                                    href="#">Terms and Conditions of EnvíaYa,</a> the <a
+                                                    href="#">Privacy Policy</a></label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Accordion card -->
+
+                        </div>
+                        <!-- Accordion wrapper -->
+
+                    </div>
+                    <!-- Edit Adress -->
+                    <div class="col-md-4">
+                        <div class="card-address">
+
+                            <div class="card-address-block" id="origin">
+                                <div class="card-body-headline d-flex justify-content-between"><span>Origin</span>
+                                    <button type="button" class="btn btn-edit-addr"><i
+                                            class="fas fa-pencil-alt  atoms-icon-shipments-user-chat"
+                                            aria-hidden="true"></i></button>
+                                </div>
+                                <div class="wr_line_address_book d-flex">
+                                    <div class="static">Contact</div>
+                                    <div class="render_value">
+                                        Ian Mitchell
+                                    </div>
+                                </div>
+                                <div class="wr_line_address_book d-flex">
+                                    <div class="static">Ship from</div>
+                                    <div class="render_value">
+                                        <span class="flag">
+                                            <img src="img/custom/flag.png" alt=" ">
+                                        </span>
+                                        95930 Mecayapan, VE
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-address-block" id="destination">
+                                <div class="card-body-headline d-flex justify-content-between"><span>Destination</span>
+                                    <button type="button" class="btn btn-edit-addr"><i
+                                            class="fas fa-pencil-alt  atoms-icon-shipments-user-chat"
+                                            aria-hidden="true"></i></button>
+                                </div>
+                                <div class="wr_line_address_book d-flex">
+                                    <div class="static">Contact</div>
+                                    <div class="render_value">
+                                        Ian Mitchell
+                                    </div>
+                                </div>
+                                <div class="wr_line_address_book d-flex">
+                                    <div class="static">Ship to</div>
+                                    <div class="render_value">
+                                        <span class="flag">
+                                            <img src="img/custom/flag.png" alt=" ">
+                                        </span>
+                                        95930 Mecayapan, VE
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Payment Details -->
+                            <div class="card-address-block" id="pay_details">
+                                <div class="card-body-headline d-flex justify-content-between"><span>Payment
+                                        Details</span>
+                                    <button type="button" class="btn btn-edit-addr"><i
+                                            class="fas fa-pencil-alt  atoms-icon-shipments-user-chat"
+                                            aria-hidden="true"></i></button>
+                                </div>
+                                <div class="wr_line_address_book d-flex">
+                                    <div class="static">Contact</div>
+                                    <div class="render_value">
+                                        <img src="img/svg/ups.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="wr_line_address_book d-flex">
+                                    <div class="static">Weight</div>
+                                    <div class="render_value">
+                                        1.60 kg
+                                    </div>
+                                </div>
+                                <div class="wr_line_address_book d-flex">
+                                    <div class="static">Net price</div>
+                                    <div class="render_value">
+                                        MX$215.99
+                                    </div>
+                                </div>
+                                <div class="wr_line_address_book d-flex">
+                                    <div class="static">VAT (16.00%)</div>
+                                    <div class="render_value">
+                                        MX$34.56
+                                    </div>
+                                </div>
+                                <div class="card-body-headline"></div>
+                                <div class="wr_line_address_book d-flex">
+                                    <div class="static">Total</div>
+                                    <div class="render_value render_value_total">
+                                        MX$34.56
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <button type="button" class="btn btn-continue">PAY MX$250.55 WITH PAYPAL</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="page-footer">
+                <div class="row">
+                    <div class=" col-md-4 col-lg-4 col-xl-4">
+                        <div class="foo-wrapper">
+                            <h3>País</h3>
+                            <p>
+                                <select class="mdb-select md-form colorful-select dropdown-primary"
+                                    searchable="Search here..">
+                                    <option value="" disabled selected>Choose your country</option>
+                                    <option value="1">USA</option>
+                                    <option value="2">Germany</option>
+                                    <option value="3">France</option>
+                                    <option value="3">Poland</option>
+                                    <option value="3">Japan</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="foo-wrapper">
+                            <h3>Enlaces</h3>
+                            <a href="https://enviaya.com.mx/terminos_y_condiciones">Términos y condiciones</a>
+                            <a href="https://enviaya.com.mx/aviso_de_privacidad">Aviso de Privacidad</a>
+                            <a href="https://enviaya.com.mx/contacto">Contacto</a>
+                        </div>
+                        <div class="foo-wrapper">
+                            <h3>Métodos de Pago</h3>
+                            <img src="img/custom/pay.png" alt="">
+                        </div>
+                    </div>
+                    <div class=" col-md-4 col-lg-4 col-xl-4">
+                        <div class="foo-wrapper">
+                            <h3>Sobre nosotros</h3>
+                            <p>Somos una empresa que nace global con base en Chile y México. Tenemos más de 10 años de
+                                experiencia en
+                                la industria de transporte y logística hemos estado involucrado en el desarrollo de
+                                productos de e
+                                commerce en uno de los lideres de la logistica del mundo.</p>
+                            <p>Nuestra misión es fortalecer y facilitar el comercio electrónico de nuestros clientes,
+                                ofreciendo
+                                herramientas seguras, confiables y fáciles de usar para integrar sus servicios de
+                                logística.</p>
+                        </div>
+                    </div>
+                    <div class=" col-md-4 col-lg-4 col-xl-4">
+                        <div class="foo-wrapper">
+                            <h3>Contáctanos!</h3>
+                            <p>
+                                Kepler 195 <br />
+                                Col. Nueva Anzures<br />
+                                11590 México DF<br />
+                                México </p>
+                        </div>
+                        <div class="foo-wrapper">
+                            <i class="fa-custome icn-input_email"></i><a href="https://enviaya.com.mx/contacto">Enviar
+                                un mensaje</a>
+                        </div>
+                        <div class="foo-wrapper">
+                            <p> Horarios de Servicio: <br />
+                                <i class="fa-custome icn-shipmennts_user_schedule"></i> 09:00 - 19:00</p>
+                            <p class="foo-intel">(Horario UTC -6:00 Mexico City)</p>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+            <!--Footer-->
+        </div>
+        <!-- /Start your project here-->
+
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

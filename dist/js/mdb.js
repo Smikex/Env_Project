@@ -27396,6 +27396,13 @@ $(document).ready(function () {
     $(".radio" + test).show();
   });
 
+  // radio payment
+
+  $('.payment-accordion .collapsed').click(function(){
+    $('.payment-accordion ').find('input').removeAttr('checked');
+  $(this).find('input').attr('checked', 'checked');
+  });
+
   // Material Select Initialization
 
   $('.mdb-select').materialSelect();
